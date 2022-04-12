@@ -1,0 +1,29 @@
+version: '3.4'
+
+services:
+  book:
+    image: ${DOCKER_REGISTRY-}book
+    build:
+      context: .
+      dockerfile: Book\Dockerfile
+
+  member:
+    image: ${DOCKER_REGISTRY-}member
+    build:
+      context: .
+      dockerfile: Member\Dockerfile
+
+
+  order:
+    image: ${DOCKER_REGISTRY-}order
+    build:
+      context: .
+      dockerfile: Order\Dockerfile
+
+
+  review:
+    image: ${DOCKER_REGISTRY-}review
+    build:
+      context: .
+      dockerfile: Review\Dockerfile
+

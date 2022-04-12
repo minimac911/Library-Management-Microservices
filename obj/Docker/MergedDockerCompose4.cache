@@ -1,0 +1,44 @@
+name: dockercompose13479561546907446562
+services:
+  book:
+    build:
+      context: C:\Users\thoma\OneDrive\University\HONOURS\Year 2\Sem 1\Services Computing\Assignments\D02\Library-Management-Microservices
+      dockerfile: Book\Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: book
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 80
+      protocol: tcp
+  member:
+    build:
+      context: C:\Users\thoma\OneDrive\University\HONOURS\Year 2\Sem 1\Services Computing\Assignments\D02\Library-Management-Microservices
+      dockerfile: Member\Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: member
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 80
+      protocol: tcp
+  order:
+    build:
+      context: C:\Users\thoma\OneDrive\University\HONOURS\Year 2\Sem 1\Services Computing\Assignments\D02\Library-Management-Microservices
+      dockerfile: Order\Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: order
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 80
+      protocol: tcp
+networks:
+  default:
+    name: dockercompose13479561546907446562_default

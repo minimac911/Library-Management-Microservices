@@ -1,0 +1,1 @@
+C:\Users\thoma\OneDrive\University\HONOURS\Year 2\Sem 1\Services Computing\Assignments\D02\Library-Management-Microservices\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache

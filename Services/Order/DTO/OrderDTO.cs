@@ -5,6 +5,6 @@
         public long Id { get; set; }
         public long MemberId { get; set; }
         public long BookId { get; set; }
-        public DateTime checkoutDate { get; set; }
+        public DateTime? checkoutDate { get; set; }
     }
 }

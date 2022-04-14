@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore;
 namespace Member.Controllers
 {
     [ApiController]
-    [Route("members")]
+    [Route("api/v1/members")]
     public class MemberController : Controller
     {
         private readonly MemberContext _context;

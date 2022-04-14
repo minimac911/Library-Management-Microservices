@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore;
 namespace Book.Controllers
 {
     [ApiController]
-    [Route("api/books")]
+    [Route("api/v1/books")]
     public class BookController : Controller
     {
         private readonly BookContext _context;

@@ -7,7 +7,7 @@ using Order.Models;
 namespace Order.Controllers
 {
     [ApiController]
-    [Route("api/orders")]
+    [Route("api/v1/orders")]
     public class OrderController : Controller
     {
         private readonly OrderContext _context;
@@ -30,7 +30,7 @@ namespace Order.Controllers
             {
                 BookId = orderDTO.BookId,
                 MemberId = orderDTO.MemberId,
-                checkoutDate = (DateTime)(orderDTO.checkoutDate == null ? DateTime.Now : orderDTO.checkoutDate), 
+                checkoutDate = (DateTime)(orderDTO.checkoutDate == null ? DateTime.Now.ToUniversalTime() : orderDTO.checkoutDate), 
             };
             _context.Orders.Add(order);
             await _context.SaveChangesAsync();
@@ -39,9 +39,16 @@ namespace Order.Controllers
         }
 
         [HttpGet("{id}")]
-        public void GetSingleOrder(long id)
+        public async Task<ActionResult<OrderDTO>> GetSingleOrder(long id)
         {
+            var order = await _context.Orders.FindAsync(id);
 
+            if(order == null)
+            {
+                return NotFound();  
+            }
+
+            return OrderToDTO(order);
         }
 
         private bool OrderExists(long id)

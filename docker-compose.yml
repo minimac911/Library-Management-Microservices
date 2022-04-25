@@ -27,3 +27,9 @@ services:
       context: .
       dockerfile: Review\Dockerfile
 
+
+  coreapigateway:
+    image: ${DOCKER_REGISTRY-}coreapigateway
+    build:
+      context: .
+      dockerfile: ApiGateways/CoreApiGateway/Dockerfile

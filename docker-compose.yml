@@ -15,6 +15,11 @@ services:
     build:
       context: .
       dockerfile: ApiGateways/CoreApiGateway/Dockerfile
+    depends_on: 
+      - review
+      - order
+      - member
+      - book
 
 
   review:
@@ -22,6 +27,8 @@ services:
     build:
       context: .
       dockerfile: Services/Review/Dockerfile
+    depends_on: 
+      - db
 
 
   order:
@@ -29,6 +36,8 @@ services:
     build:
       context: .
       dockerfile: Services/Order/Dockerfile
+    depends_on: 
+      - db
 
 
   member:
@@ -36,6 +45,8 @@ services:
     build:
       context: .
       dockerfile: Services/Member/Dockerfile
+    depends_on: 
+      - db
 
 
   book:
@@ -43,4 +54,6 @@ services:
     build:
       context: .
       dockerfile: Services/Book/Dockerfile
+    depends_on: 
+      - db
 

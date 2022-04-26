@@ -1,7 +1,8 @@
 ﻿{
   "Routes": [
+    // Member service
     {
-      "DownstreamPathTemplate": "/api/{version}/members",
+      "DownstreamPathTemplate": "/api/v1/members/",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
@@ -9,11 +10,26 @@
           "Port": 443
         }
       ],
-      "UpstreamPathTemplate": "/api/{version}/members",
-      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ]
+      "UpstreamPathTemplate": "/api/{version}/members/",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ],
+      "DangerousAcceptAnyServerCertificateValidator": true
     },
     {
-      "DownstreamPathTemplate": "/api/{version}/books",
+      "DownstreamPathTemplate": "/api/v1/members/{url}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "member",
+          "Port": 443
+        }
+      ],
+      "UpstreamPathTemplate": "/api/{version}/members/{url}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ],
+      "DangerousAcceptAnyServerCertificateValidator": true
+    },
+    // Book service
+    {
+      "DownstreamPathTemplate": "/api/v1/books/",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
@@ -21,11 +37,26 @@
           "Port": 443
         }
       ],
-      "UpstreamPathTemplate": "/api/{version}/books",
-      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ]
+      "UpstreamPathTemplate": "/api/{version}/books/",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ],
+      "DangerousAcceptAnyServerCertificateValidator": true
     },
     {
-      "DownstreamPathTemplate": "/api/{version}/orders",
+      "DownstreamPathTemplate": "/api/v1/books/{url}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "book",
+          "Port": 443
+        }
+      ],
+      "UpstreamPathTemplate": "/api/{version}/books/{url}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ],
+      "DangerousAcceptAnyServerCertificateValidator": true
+    },
+    // Order service
+    {
+      "DownstreamPathTemplate": "/api/v1/orders/",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
@@ -33,10 +64,49 @@
           "Port": 443
         }
       ],
-      "UpstreamPathTemplate": "/api/{version}/orders",
-      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ]
+      "UpstreamPathTemplate": "/api/v1/orders/",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ],
+      "DangerousAcceptAnyServerCertificateValidator": true
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/orders/{url}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "order",
+          "Port": 443
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/orders/{url}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ],
+      "DangerousAcceptAnyServerCertificateValidator": true
+    },
+    // Review service
+    {
+      "DownstreamPathTemplate": "/api/v1/books/{bookId}/reviews/",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "review",
+          "Port": 443
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/books/{bookId}/reviews/",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ],
+      "DangerousAcceptAnyServerCertificateValidator": true
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/books/{bookId}/reviews/{url}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "review",
+          "Port": 443
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/books/{bookId}/reviews/{url}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ],
+      "DangerousAcceptAnyServerCertificateValidator": true
     }
   ],
-  "GlobalConfiguration": {
-  },
 }

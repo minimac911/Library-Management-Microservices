@@ -1,35 +1,46 @@
 version: '3.4'
 
 services:
-  book:
-    image: ${DOCKER_REGISTRY-}book
+  db:
+    image: postgres:14.1-alpine
+    restart: always
+    
+  adminer:
+    image: adminer
+    depends_on: 
+      - db
+      
+  coreapigateway:
+    image: ${DOCKER_REGISTRY-}coreapigateway
     build:
       context: .
-      dockerfile: Book\Dockerfile
-
-  member:
-    image: ${DOCKER_REGISTRY-}member
-    build:
-      context: .
-      dockerfile: Member\Dockerfile
-
-
-  order:
-    image: ${DOCKER_REGISTRY-}order
-    build:
-      context: .
-      dockerfile: Order\Dockerfile
+      dockerfile: ApiGateways/CoreApiGateway/Dockerfile
 
 
   review:
     image: ${DOCKER_REGISTRY-}review
     build:
       context: .
-      dockerfile: Review\Dockerfile
+      dockerfile: Services/Review/Dockerfile
 
 
-  coreapigateway:
-    image: ${DOCKER_REGISTRY-}coreapigateway
+  order:
+    image: ${DOCKER_REGISTRY-}order
     build:
       context: .
-      dockerfile: ApiGateways/CoreApiGateway/Dockerfile
+      dockerfile: Services/Order/Dockerfile
+
+
+  member:
+    image: ${DOCKER_REGISTRY-}member
+    build:
+      context: .
+      dockerfile: Services/Member/Dockerfile
+
+
+  book:
+    image: ${DOCKER_REGISTRY-}book
+    build:
+      context: .
+      dockerfile: Services/Book/Dockerfile
+

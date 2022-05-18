@@ -1,0 +1,8 @@
+2022-05-18 20:58:58.622 +00:00 [INF] Now listening on: https://[::]:443
+2022-05-18 20:58:58.775 +00:00 [INF] Now listening on: http://[::]:80
+2022-05-18 20:58:58.807 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-18 20:58:58.836 +00:00 [INF] Hosting environment: Development
+2022-05-18 20:58:58.838 +00:00 [INF] Content root path: /app/
+2022-05-18 20:59:16.730 +00:00 [INF] Get all books
+2022-05-18 20:59:17.074 +00:00 [INF] 3 books found
+2022-05-18 20:59:17.121 +00:00 [INF] HTTP GET /api/v1/books/ responded 200 in 435.3364 ms

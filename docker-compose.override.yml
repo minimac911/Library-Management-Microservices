@@ -49,6 +49,7 @@ services:
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_URLS=https://+:443;http://+:80
       - ConnectionStrings__DefaultConnection=Host=db;Port=5432;Database=services_computing_review;Username=postgres;Password=postgres;
+      - Serilog__WriteTo__0__Args__serverUrl=http://seq
     ports:
       - "80"
       - "5200:443"
@@ -62,6 +63,7 @@ services:
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_URLS=https://+:443;http://+:80
       - ConnectionStrings__DefaultConnection=Host=db;Port=5432;Database=services_computing_order;Username=postgres;Password=postgres;
+      - Serilog__WriteTo__0__Args__serverUrl=http://seq
     ports:
       - "80"
       - "5201:443"
@@ -89,6 +91,7 @@ services:
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_URLS=https://+:443;http://+:80
       - ConnectionStrings__DefaultConnection=Host=db;Port=5432;Database=services_computing_book;Username=postgres;Password=postgres;
+      - Serilog__WriteTo__0__Args__serverUrl=http://seq
     ports:
       - "80"
       - "5203:443"

@@ -77,3 +77,18 @@
 2022-05-18 17:32:36.318 +00:00 [INF] Getting user with id '37'
 2022-05-18 17:32:36.381 +00:00 [INF] Deleting member with id '37'
 2022-05-18 17:32:36.411 +00:00 [INF] HTTP DELETE /api/v1/members/37 responded 204 in 96.8766 ms
+2022-05-18 20:58:56.618 +00:00 [INF] Now listening on: https://[::]:443
+2022-05-18 20:58:56.669 +00:00 [INF] Now listening on: http://[::]:80
+2022-05-18 20:58:56.681 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-18 20:58:56.686 +00:00 [INF] Hosting environment: Development
+2022-05-18 20:58:56.688 +00:00 [INF] Content root path: /app/
+2022-05-18 20:59:00.974 +00:00 [INF] Get all memebers
+2022-05-18 20:59:01.590 +00:00 [INF] 5 members found
+2022-05-18 20:59:01.709 +00:00 [INF] HTTP GET /api/v1/members/ responded 200 in 794.2645 ms
+2022-05-18 20:59:10.488 +00:00 [INF] Get all memebers
+2022-05-18 20:59:10.554 +00:00 [INF] 5 members found
+2022-05-18 20:59:10.563 +00:00 [INF] HTTP GET /api/v1/members/ responded 200 in 77.3631 ms
+2022-05-18 21:01:23.727 +00:00 [INF] Now listening on: https://[::]:443
+2022-05-18 21:01:23.797 +00:00 [INF] Now listening on: http://[::]:80
+2022-05-18 21:01:23.822 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-18 21:01:23.824 +00:00 [INF] Hosting environment: Development

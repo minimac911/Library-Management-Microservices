@@ -5,7 +5,7 @@
       "commandVersion": "1.0",
       "serviceActions": {
         "adminer": "StartWithoutDebugging",
-        "book": "DoNotStart",
+        "book": "StartDebugging",
         "coreapigateway": "StartDebugging",
         "db": "StartWithoutDebugging",
         "member": "StartDebugging",

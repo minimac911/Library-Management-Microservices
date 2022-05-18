@@ -79,21 +79,31 @@ namespace Member.Controllers
                 return BadRequest();
             }
 
+            _logger.LogInformation("Gettiing member with id: "+id);
             var member = await _context.Members.FindAsync(id);
             if (member == null)
             {
+                _logger.LogError("Member with id '"+id+"' does not exist");
+
                 return NotFound();
             }
 
+            _logger.LogInformation("Updating member name: '"+member.Name+"' -> '"+ memberDto.Name+"'");
+            _logger.LogInformation("Updating member email: '"+member.Email+"' -> '"+ memberDto.Email+"'");
+
             member.Name = memberDto.Name;
             member.Email = memberDto.Email;
-
+                
             try
             {
+                _logger.LogInformation("Attempting to save member");
                 await _context.SaveChangesAsync();
+                _logger.LogInformation("Member saved");
             }
             catch (DbUpdateConcurrencyException) when (!MemberExists(id))
             {
+                _logger.LogError("Member with id '" + id + "' does not exist");
+
                 return NotFound();
             }
 
@@ -101,15 +111,20 @@ namespace Member.Controllers
         }
 
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteTodoItem(long id)
+        public async Task<IActionResult> DeleteMemberItem(long id)
         {
+            _logger.LogInformation("Getting user with id '"+id+"'");
+
             var member = await _context.Members.FindAsync(id);
 
             if (member == null)
             {
+                _logger.LogError("Member with id '" + id + "' does not exist");
+
                 return NotFound();
             }
 
+            _logger.LogInformation("Deleting member with id '" + id + "'");
             _context.Members.Remove(member);
             await _context.SaveChangesAsync();
 

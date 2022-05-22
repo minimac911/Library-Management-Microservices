@@ -12,6 +12,7 @@ try {
     var builder = WebApplication.CreateBuilder(args);
 
     builder.Host.UseSerilog((ctx, lc) => lc
+      .Enrich.WithProperty("Service", "Book")
       .WriteTo.Console()
       .ReadFrom.Configuration(ctx.Configuration));
     // Add services to the container.

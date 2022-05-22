@@ -3,3 +3,37 @@
 2022-05-22 12:44:49.302 +00:00 [INF] Application started. Press Ctrl+C to shut down.
 2022-05-22 12:44:49.304 +00:00 [INF] Hosting environment: Development
 2022-05-22 12:44:49.307 +00:00 [INF] Content root path: /app/
+2022-05-22 13:38:54.650 +00:00 [INF] Now listening on: https://[::]:443
+2022-05-22 13:38:55.019 +00:00 [INF] Now listening on: http://[::]:80
+2022-05-22 13:38:55.047 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-22 13:38:55.067 +00:00 [INF] Hosting environment: Development
+2022-05-22 13:38:55.085 +00:00 [INF] Content root path: /app/
+2022-05-22 13:39:51.766 +00:00 [INF] Get all memebers
+2022-05-22 13:39:52.327 +00:00 [INF] 5 members found
+2022-05-22 13:39:52.374 +00:00 [INF] HTTP GET /api/v1/members/ responded 200 in 682.9203 ms
+2022-05-22 13:39:54.756 +00:00 [INF] Create new memeber
+2022-05-22 13:39:55.408 +00:00 [INF] Member 39 created
+2022-05-22 13:39:55.457 +00:00 [INF] HTTP POST /api/v1/members/ responded 201 in 804.8837 ms
+2022-05-22 13:40:03.864 +00:00 [INF] Get a single member
+2022-05-22 13:40:03.936 +00:00 [WRN] Member with id: 37 does not exist
+2022-05-22 13:40:03.956 +00:00 [INF] HTTP GET /api/v1/members/37 responded 404 in 107.4510 ms
+2022-05-22 13:40:12.540 +00:00 [INF] Update member: 4
+2022-05-22 13:40:12.565 +00:00 [INF] Gettiing member with id: 4
+2022-05-22 13:40:12.622 +00:00 [INF] Updating member name: 'Jill' -> 'Jill'
+2022-05-22 13:40:12.623 +00:00 [INF] Updating member email: 'jill@gmail.com' -> 'jill@gmail.com'
+2022-05-22 13:40:12.630 +00:00 [INF] Attempting to save member
+2022-05-22 13:40:12.632 +00:00 [INF] Member saved
+2022-05-22 13:40:12.634 +00:00 [INF] HTTP PUT /api/v1/members/4 responded 204 in 108.6063 ms
+2022-05-22 13:40:16.402 +00:00 [INF] Getting user with id '37'
+2022-05-22 13:40:16.414 +00:00 [ERR] Member with id '37' does not exist
+2022-05-22 13:40:16.458 +00:00 [INF] HTTP DELETE /api/v1/members/37 responded 404 in 61.8890 ms
+2022-05-22 13:43:39.414 +00:00 [INF] Now listening on: https://[::]:443
+2022-05-22 13:43:39.526 +00:00 [INF] Now listening on: http://[::]:80
+2022-05-22 13:43:39.535 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-22 13:43:39.537 +00:00 [INF] Hosting environment: Development
+2022-05-22 13:43:39.538 +00:00 [INF] Content root path: /app/
+2022-05-22 13:52:27.101 +00:00 [INF] Now listening on: https://[::]:443
+2022-05-22 13:52:27.466 +00:00 [INF] Now listening on: http://[::]:80
+2022-05-22 13:52:27.470 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-22 13:52:27.471 +00:00 [INF] Hosting environment: Development
+2022-05-22 13:52:27.472 +00:00 [INF] Content root path: /app/

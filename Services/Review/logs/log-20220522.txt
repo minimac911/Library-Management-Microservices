@@ -1,0 +1,23 @@
+2022-05-22 13:38:55.560 +00:00 [INF] Now listening on: https://[::]:443
+2022-05-22 13:38:56.056 +00:00 [INF] Now listening on: http://[::]:80
+2022-05-22 13:38:56.079 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-22 13:38:56.091 +00:00 [INF] Hosting environment: Development
+2022-05-22 13:38:56.100 +00:00 [INF] Content root path: /app/
+2022-05-22 13:43:39.263 +00:00 [INF] Now listening on: https://[::]:443
+2022-05-22 13:43:39.466 +00:00 [INF] Now listening on: http://[::]:80
+2022-05-22 13:43:39.469 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-22 13:43:39.484 +00:00 [INF] Hosting environment: Development
+2022-05-22 13:43:39.484 +00:00 [INF] Content root path: /app/
+2022-05-22 13:52:27.060 +00:00 [INF] Now listening on: https://[::]:443
+2022-05-22 13:52:27.267 +00:00 [INF] Now listening on: http://[::]:80
+2022-05-22 13:52:27.308 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-22 13:52:27.338 +00:00 [INF] Hosting environment: Development
+2022-05-22 13:52:27.353 +00:00 [INF] Content root path: /app/
+2022-05-22 13:52:40.184 +00:00 [INF] Create new review for book '1'
+2022-05-22 13:52:40.729 +00:00 [INF] Review created for book '1'
+2022-05-22 13:52:40.806 +00:00 [INF] HTTP POST /api/v1/books/1/reviews/ responded 201 in 784.5741 ms
+2022-05-22 13:52:44.159 +00:00 [INF] Get all reviews for book '1'
+2022-05-22 13:52:44.858 +00:00 [INF] HTTP GET /api/v1/books/1/reviews/ responded 200 in 746.7373 ms
+2022-05-22 13:53:08.323 +00:00 [INF] Get review '2' for book '1'
+2022-05-22 13:53:08.552 +00:00 [WRN] Review with id: '2' does not exist for book '1'
+2022-05-22 13:53:08.604 +00:00 [INF] HTTP GET /api/v1/books/1/reviews/2 responded 404 in 287.0667 ms

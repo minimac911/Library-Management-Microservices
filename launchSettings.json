@@ -9,8 +9,8 @@
         "coreapigateway": "StartDebugging",
         "db": "StartWithoutDebugging",
         "member": "StartDebugging",
-        "order": "DoNotStart",
-        "review": "DoNotStart",
+        "order": "StartDebugging",
+        "review": "StartDebugging",
         "seq": "StartWithoutDebugging"
       }
     }

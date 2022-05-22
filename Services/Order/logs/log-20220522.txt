@@ -1,0 +1,23 @@
+2022-05-22 13:38:55.600 +00:00 [INF] Now listening on: https://[::]:443
+2022-05-22 13:38:56.135 +00:00 [INF] Now listening on: http://[::]:80
+2022-05-22 13:38:56.152 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-22 13:38:56.154 +00:00 [INF] Hosting environment: Development
+2022-05-22 13:38:56.155 +00:00 [INF] Content root path: /app/
+2022-05-22 13:40:39.135 +00:00 [INF] Get all orders
+2022-05-22 13:40:40.205 +00:00 [INF] HTTP GET /api/v1/orders/ responded 200 in 1220.5227 ms
+2022-05-22 13:40:41.503 +00:00 [INF] Create order for member '1' to get book '2'
+2022-05-22 13:40:42.244 +00:00 [INF] Order successfully created for member '1' to get book '2'
+2022-05-22 13:40:42.312 +00:00 [INF] HTTP POST /api/v1/orders/ responded 201 in 898.0938 ms
+2022-05-22 13:40:45.754 +00:00 [INF] Get a book by id: '2'
+2022-05-22 13:40:45.823 +00:00 [WRN] Book with id '2' does not exist
+2022-05-22 13:40:45.826 +00:00 [INF] HTTP GET /api/v1/orders/2 responded 404 in 87.0263 ms
+2022-05-22 13:43:39.481 +00:00 [INF] Now listening on: https://[::]:443
+2022-05-22 13:43:39.572 +00:00 [INF] Now listening on: http://[::]:80
+2022-05-22 13:43:39.578 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-22 13:43:39.584 +00:00 [INF] Hosting environment: Development
+2022-05-22 13:43:39.587 +00:00 [INF] Content root path: /app/
+2022-05-22 13:52:27.159 +00:00 [INF] Now listening on: https://[::]:443
+2022-05-22 13:52:27.491 +00:00 [INF] Now listening on: http://[::]:80
+2022-05-22 13:52:27.506 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-22 13:52:27.507 +00:00 [INF] Hosting environment: Development
+2022-05-22 13:52:27.508 +00:00 [INF] Content root path: /app/

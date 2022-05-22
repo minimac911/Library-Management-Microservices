@@ -1,5 +1,32 @@
 ﻿{
   "Routes": [
+    // Review service
+    {
+      "DownstreamPathTemplate": "/api/v1/books/{bookId}/reviews/",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "review",
+          "Port": 443
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/books/{bookId}/reviews/",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ],
+      "DangerousAcceptAnyServerCertificateValidator": true
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/books/{bookId}/reviews/{url}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "review",
+          "Port": 443
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/books/{bookId}/reviews/{url}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ],
+      "DangerousAcceptAnyServerCertificateValidator": true
+    },
     // Member service
     {
       "DownstreamPathTemplate": "/api/v1/members/",
@@ -78,33 +105,6 @@
         }
       ],
       "UpstreamPathTemplate": "/api/v1/orders/{url}",
-      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ],
-      "DangerousAcceptAnyServerCertificateValidator": true
-    },
-    // Review service
-    {
-      "DownstreamPathTemplate": "/api/v1/books/{bookId}/reviews/",
-      "DownstreamScheme": "https",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "review",
-          "Port": 443
-        }
-      ],
-      "UpstreamPathTemplate": "/api/v1/books/{bookId}/reviews/",
-      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ],
-      "DangerousAcceptAnyServerCertificateValidator": true
-    },
-    {
-      "DownstreamPathTemplate": "/api/v1/books/{bookId}/reviews/{url}",
-      "DownstreamScheme": "https",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "review",
-          "Port": 443
-        }
-      ],
-      "UpstreamPathTemplate": "/api/v1/books/{bookId}/reviews/{url}",
       "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ],
       "DangerousAcceptAnyServerCertificateValidator": true
     }

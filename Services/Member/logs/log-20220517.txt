@@ -1,0 +1,60 @@
+2022-05-17 21:31:28.151 +02:00 [INF] Now listening on: http://localhost:5222
+2022-05-17 21:31:28.209 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-17 21:31:28.215 +02:00 [INF] Hosting environment: Development
+2022-05-17 21:31:28.216 +02:00 [INF] Content root path: C:\Users\thoma\OneDrive\University\HONOURS\Year 2\Sem 1\Services Computing\Assignments\D02\Library-Management-Microservices\Services\Member\
+2022-05-17 21:31:29.231 +02:00 [INF] HTTP GET /swagger responded 301 in 30.0156 ms
+2022-05-17 21:31:29.726 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 337.6566 ms
+2022-05-17 21:31:29.763 +02:00 [INF] HTTP GET /swagger/swagger-ui.css responded 200 in 38.8755 ms
+2022-05-17 21:31:29.868 +02:00 [INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 200 in 34.5404 ms
+2022-05-17 21:31:29.927 +02:00 [INF] HTTP GET /swagger/swagger-ui-bundle.js responded 200 in 98.2958 ms
+2022-05-17 21:31:30.129 +02:00 [INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 200 in 196.8355 ms
+2022-05-17 21:31:30.417 +02:00 [INF] HTTP GET /swagger/favicon-32x32.png responded 200 in 0.1625 ms
+2022-05-17 21:31:30.709 +02:00 [INF] HTTP GET /swagger/swagger-ui-bundle.js responded 200 in 15.6706 ms
+2022-05-17 21:31:30.919 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 165.2589 ms
+2022-05-17 21:31:37.455 +02:00 [WRN] Failed to determine the https port for redirect.
+2022-05-17 21:31:37.513 +02:00 [INF] Get all memebers
+2022-05-17 21:31:38.000 +02:00 [INF] HTTP GET /api/v1/members responded 200 in 559.2588 ms
+2022-05-17 21:32:20.976 +02:00 [INF] Get all memebers
+2022-05-17 21:32:21.029 +02:00 [INF] HTTP GET /api/v1/members responded 200 in 58.1534 ms
+2022-05-17 19:39:24.195 +00:00 [INF] Now listening on: https://[::]:443
+2022-05-17 19:39:24.250 +00:00 [INF] Now listening on: http://[::]:80
+2022-05-17 19:39:24.253 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-17 19:39:24.254 +00:00 [INF] Hosting environment: Development
+2022-05-17 19:39:24.255 +00:00 [INF] Content root path: /app/
+2022-05-17 19:40:08.888 +00:00 [INF] Get all memebers
+2022-05-17 19:40:09.417 +00:00 [INF] HTTP GET /api/v1/members/ responded 200 in 608.2669 ms
+2022-05-17 19:41:05.776 +00:00 [INF] Get all memebers
+2022-05-17 19:41:05.984 +00:00 [INF] HTTP GET /api/v1/members/ responded 200 in 210.6989 ms
+2022-05-17 19:44:55.410 +00:00 [INF] Now listening on: https://[::]:443
+2022-05-17 19:44:55.465 +00:00 [INF] Now listening on: http://[::]:80
+2022-05-17 19:44:55.485 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-17 19:44:55.489 +00:00 [INF] Hosting environment: Development
+2022-05-17 19:44:55.491 +00:00 [INF] Content root path: /app/
+2022-05-17 19:45:03.079 +00:00 [INF] Get all memebers
+2022-05-17 19:45:03.552 +00:00 [INF] HTTP GET /api/v1/members/ responded 200 in 519.5337 ms
+2022-05-17 19:45:13.229 +00:00 [INF] Get all memebers
+2022-05-17 19:45:13.298 +00:00 [INF] HTTP GET /api/v1/members/ responded 200 in 70.0242 ms
+2022-05-17 19:45:18.782 +00:00 [INF] Get all memebers
+2022-05-17 19:45:18.819 +00:00 [INF] HTTP GET /api/v1/members/ responded 200 in 37.4273 ms
+2022-05-17 19:47:33.839 +00:00 [INF] Get all memebers
+2022-05-17 19:47:33.872 +00:00 [INF] HTTP GET /api/v1/members/ responded 200 in 32.5181 ms
+2022-05-17 19:57:06.480 +00:00 [INF] Now listening on: https://[::]:443
+2022-05-17 19:57:06.531 +00:00 [INF] Now listening on: http://[::]:80
+2022-05-17 19:57:06.535 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-17 19:57:06.536 +00:00 [INF] Hosting environment: Development
+2022-05-17 19:57:06.537 +00:00 [INF] Content root path: /app/
+2022-05-17 19:57:23.497 +00:00 [INF] Get all memebers
+2022-05-17 19:57:23.890 +00:00 [INF] 3 members found
+2022-05-17 19:57:23.948 +00:00 [INF] HTTP GET /api/v1/members/ responded 200 in 495.7824 ms
+2022-05-17 19:57:30.634 +00:00 [INF] Create new memeber
+2022-05-17 19:57:30.855 +00:00 [INF] Member 4 created
+2022-05-17 19:57:30.886 +00:00 [INF] HTTP POST /api/v1/members/ responded 201 in 301.2960 ms
+2022-05-17 19:57:46.517 +00:00 [INF] Get a single member
+2022-05-17 19:57:46.667 +00:00 [INF] Member found
+2022-05-17 19:57:46.668 +00:00 [INF] HTTP GET /api/v1/members/4 responded 200 in 158.9486 ms
+2022-05-17 19:57:56.702 +00:00 [INF] Get a single member
+2022-05-17 19:57:56.708 +00:00 [WRN] Member with id: 123 does not exist
+2022-05-17 19:57:56.713 +00:00 [INF] HTTP GET /api/v1/members/123 responded 404 in 11.2196 ms
+2022-05-17 19:58:24.667 +00:00 [INF] Update member: 2
+2022-05-17 19:58:24.668 +00:00 [ERR] Member id and uri path id do not match
+2022-05-17 19:58:24.670 +00:00 [INF] HTTP PUT /api/v1/members/2 responded 400 in 20.5962 ms

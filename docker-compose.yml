@@ -1,59 +1,61 @@
-version: '3.4'
+version: "3.4"
 
 services:
   db:
     image: postgres:14.1-alpine
     restart: always
-    
+
   adminer:
     image: adminer
-    depends_on: 
+    depends_on:
       - db
-      
+
+  seq:
+    image: datalust/seq:latest
+
   coreapigateway:
     image: ${DOCKER_REGISTRY-}coreapigateway
     build:
       context: .
       dockerfile: ApiGateways/CoreApiGateway/Dockerfile
-    depends_on: 
+    depends_on:
       - review
       - order
       - member
       - book
-
 
   review:
     image: ${DOCKER_REGISTRY-}review
     build:
       context: .
       dockerfile: Services/Review/Dockerfile
-    depends_on: 
+    depends_on:
       - db
-
+      - seq
 
   order:
     image: ${DOCKER_REGISTRY-}order
     build:
       context: .
       dockerfile: Services/Order/Dockerfile
-    depends_on: 
+    depends_on:
       - db
-
+      - seq
 
   member:
     image: ${DOCKER_REGISTRY-}member
     build:
       context: .
       dockerfile: Services/Member/Dockerfile
-    depends_on: 
+    depends_on:
       - db
-
+      - seq
 
   book:
     image: ${DOCKER_REGISTRY-}book
     build:
       context: .
       dockerfile: Services/Book/Dockerfile
-    depends_on: 
+    depends_on:
       - db
-
+      - seq

@@ -1,0 +1,29 @@
+2022-05-18 20:58:58.622 +00:00 [INF] Now listening on: https://[::]:443
+2022-05-18 20:58:58.775 +00:00 [INF] Now listening on: http://[::]:80
+2022-05-18 20:58:58.807 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-18 20:58:58.836 +00:00 [INF] Hosting environment: Development
+2022-05-18 20:58:58.838 +00:00 [INF] Content root path: /app/
+2022-05-18 20:59:16.730 +00:00 [INF] Get all books
+2022-05-18 20:59:17.074 +00:00 [INF] 3 books found
+2022-05-18 20:59:17.121 +00:00 [INF] HTTP GET /api/v1/books/ responded 200 in 435.3364 ms
+2022-05-18 21:01:23.764 +00:00 [INF] Now listening on: https://[::]:443
+2022-05-18 21:01:23.828 +00:00 [INF] Now listening on: http://[::]:80
+2022-05-18 21:01:23.841 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-18 21:01:23.843 +00:00 [INF] Hosting environment: Development
+2022-05-18 21:01:23.843 +00:00 [INF] Content root path: /app/
+2022-05-18 21:01:33.705 +00:00 [INF] Get all books
+2022-05-18 21:01:34.090 +00:00 [INF] 3 books found
+2022-05-18 21:01:34.135 +00:00 [INF] HTTP GET /api/v1/books/ responded 200 in 477.0958 ms
+2022-05-18 21:02:14.503 +00:00 [INF] Get book with id: 4
+2022-05-18 21:02:14.619 +00:00 [ERR] Book '4' does not exist
+2022-05-18 21:02:14.624 +00:00 [INF] HTTP GET /api/v1/books/4 responded 404 in 149.1077 ms
+2022-05-18 21:02:29.088 +00:00 [INF] Get book with id: 4
+2022-05-18 21:02:29.102 +00:00 [ERR] Book '4' does not exist
+2022-05-18 21:02:29.148 +00:00 [INF] HTTP GET /api/v1/books/4 responded 404 in 61.7803 ms
+2022-05-18 21:03:00.237 +00:00 [INF] Get book with id: 1
+2022-05-18 21:03:00.279 +00:00 [INF] HTTP GET /api/v1/books/1 responded 200 in 42.8704 ms
+2022-05-18 21:03:10.004 +00:00 [INF] Get book with id: 1
+2022-05-18 21:03:10.071 +00:00 [INF] HTTP GET /api/v1/books/1 responded 200 in 67.2450 ms
+2022-05-18 21:03:26.093 +00:00 [INF] Create book: Book.DTO.BookDTO
+2022-05-18 21:03:26.307 +00:00 [INF] Book saved
+2022-05-18 21:03:26.345 +00:00 [INF] HTTP POST /api/v1/books/ responded 201 in 279.6889 ms

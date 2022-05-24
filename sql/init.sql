@@ -1,4 +1,4 @@
-CREATE DATABASE IF NOT EXISTS `services_computing_review`;
-CREATE DATABASE IF NOT EXISTS `services_computing_order`;
-CREATE DATABASE IF NOT EXISTS `services_computing_member`;
-CREATE DATABASE IF NOT EXISTS `services_computing_book`;
+CREATE DATABASE services_computing_review;
+CREATE DATABASE services_computing_order;
+CREATE DATABASE services_computing_member;
+CREATE DATABASE services_computing_book;
